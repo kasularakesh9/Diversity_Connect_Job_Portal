@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: black;
+      color: white;
+      background-image: url('../public/Pictures/p1.png');
+    }
+
+    #message-container {
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    /* Styling for individual messages */
+    .message {
+      background-color: #333;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    #send-container {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      border-top: 2px solid white;
+    }
+
+    #message-input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Styling for the send button */
+    .button {
+      font-family: "Open Sans", sans-serif;
+      padding: 10px 30px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      color: #333;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      width: 140px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #80FF44;
+      color: #2A2A2A;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="btn" onclick="returnToDashboard()">Return to Dashboard</a>
+  
+  <div id="displayValue"></div>
+  
+  <form id="senderFormValue">
+    <input type="text" id="messageValue" placeholder="Type your message...">
+    <button type="submit" id="messageValueBtn" class="btn">Send</button>
+  </form>
+  
+  <script>
+    function returnToDashboard() {
+      window.history.back();
+    }
+  </script>
+  
+  </body>
+</html>
