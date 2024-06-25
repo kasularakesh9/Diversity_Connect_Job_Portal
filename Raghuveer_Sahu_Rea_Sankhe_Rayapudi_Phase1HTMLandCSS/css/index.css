@@ -1,0 +1,816 @@
+/*
+1. Bhujangaswami Raghuveer, Achal : 1002102435
+2. Sahu, Archi : 1002104548
+3. Rea, Cesar : 1001643491
+4. Sankhe, Sanmesh Amol : 1001924953
+5. Rayapudi, Swaroop : 1002069356 
+*/
+.navbar {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #00ffe1;
+  color: #000;
+}
+
+/*----------------- Dropdown menu styles-------------- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+body {
+    background-color: black;
+    color: white; 
+    background-image: url('../Pictures/p1.png');
+}
+
+.homemid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin-top: -50px;
+}
+
+.homemid h1 {
+  font-size: 60px;
+  color: #B71DDE;
+  font-family: "Open Sans", sans-serif;
+}
+
+.homemid p.center {
+  margin: 16px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.homemid .button-container {
+  margin-top: 32px;
+}
+
+/*-----------------Homepage buttons---------------------- */
+.button-container {
+  text-align: center; 
+  margin-top: 20px; 
+  justify-content: center;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  width: 140px;
+}
+
+.button:hover {
+  background-color: #80FF44; 
+  color: #2A2A2A;
+}
+
+/*---------------------------------About us page--------------------------------------*/
+
+.about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.aboutin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  height: 90vh;
+}
+
+.about-content {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.about-img {
+  flex: 1;
+  background-image: url("../Pictures/about.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+/*----------------------LOGIN--------------------------*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[text="file"]
+{
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #B71DDE;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refo {
+  text-align: center;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+}
+
+.refo a:link, .refo a:visited {
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border: 4px solid #80FF44;
+  padding: 1px;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.refo a:hover, .refo a:active {
+  background-color: #80FF44;
+  color: white;
+  text-decoration: none;
+}
+
+
+.links {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.links a:link, .links a:visited {
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: 5px solid #80FF44;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a:hover, .links a:active {
+  background-color: #80FF44;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contactmid p.center {
+  margin: 16px 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.urm-img {
+  flex: 1;
+  background-image: url("../Pictures/urm.png");
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+}
+
+
+
+.dei-img {
+  flex: 1;
+  background-image: url("../Pictures/de.png");
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+}
+
+
+
+.recr-img {
+  flex: 1;
+  background-image: url("../Pictures/recruiter.png");
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+}
+
+
+.acad-img {
+  flex: 1;
+  background-image: url("../Pictures/acad.png");
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+}
+
+
+/*----------------------Dashboard--------------------------*/
+.dashhead{
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-left: 90px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.left-side{
+  padding-left: 5%;
+  margin-top: 0%;
+
+}
+
+
+.Facultysec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ftable {
+  border-collapse: collapse;
+  border: #ffffff;
+  border-color: #ffffff;
+  margin: 25px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  min-width: 50px;
+  
+}
+.ftable th,
+.ftable td {
+  padding: 12px 20px;
+  color: #ffffff;
+}
+
+table,
+td {
+    border: 1px solid #a3a1a1;
+}
+
+thead
+{
+    border:1px solid #a3a1a1;
+    background-color: #333;
+    color: #ffffff;
+}
+
+h3{
+  text-align: left;
+}
+
+.perinfo {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+}
+
+.perinfo label {
+  font-weight: bold;
+}
+
+
+.right-side {
+  width: 30%;
+  height: 500px;
+  
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  
+}
+
+.joblist{
+  width: 90%;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.right-side .job-posting {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.dashbutton {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.dashbutton:hover
+ {
+  background-color: #80FF44; 
+  color: #2A2A2A;
+}
+
+.perinfo input[type="text"] {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+.noinfo {
+  padding-left: 10px;
+  text-align: left; 
+}
+
+.noinfo label,
+.noinfo input[type="text"] {
+  font-family: "Open Sans", sans-serif;
+  text-align: start;
+  display: inline-block;
+  padding: 4px;
+  border: none;
+}
+
+.noinfo input[type="text"] {
+  text-align: center;
+  width: 15%;
+}
+
+.debut{
+  text-align: center;
+  align-items: center;
+}
+
+/*----------------------Chat Button On Dashboard--------------------------*/
+
+.chatbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #B71DDE; 
+ 
+}
+
+.chatbutton button {
+  padding: 24px 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*----------------------Chat Option--------------------------*/
+
+.chatbox{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 800px;	
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.chattxt {
+  display: flex;
+        justify-content: center;
+        align-items: center;			
+  height: 400px; 
+  width: 500px;
+  overflow-y: scroll;
+}
+
+.chats {
+  margin-bottom: 10px;
+  width: 400px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sendertxt
+{
+  font-weight: bold;
+}
+
+.chatbottom {
+  display: flex;
+  padding: 10px;
+}
+
+.chatbottom input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+/*----------------------Admin--------------------------*/
+
+
+.center{
+  text-align: center;
+}	
+
+.secondarycontent {
+  
+  text-align: center;
+}
+  
+
+.parent{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 5px;	
+  margin-top: 40px;	
+  }
+
+  .img-container {
+    height: 400px;
+    width: 500px;	
+     margin: auto;
+      max-width: 100%;
+          height: auto; 
+  }	
+       
+  .box {
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    padding: 21px;
+    font-size: 151%;
+    width: 200px;
+    height: 100px;
+    margin-right: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+    
+    .wrapper{
+          display: flex;
+          justify-content: center; 
+          margin-top: 40px;
+    }
+
+    .tile-container {
+    flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px; 
+    display: flex;
+    flex-direction: row;
+    }
+
+.sidenav {
+  height: 600px;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 120px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.foot {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  position: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0; 
+}
+  
+.container {
+  flex: 1; 
+  padding-bottom: 60px; 
+}
+
+.footdash {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footdash {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    z-index: initial;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .homemid h1 {
+    font-size: 40px;
+  }
+
+  .homemid .button {
+    font-size: 14px;
+  }
+
+  .center {
+    margin-top: 150px;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+ .about_container {
+  flex-direction: column;
+ }
+
+ .about {
+    flex-direction: column;
+ }
+
+ .about-content {
+    margin-right: 0;
+    text-align: center;
+ }
+
+ .about-img {
+    margin-top: 20px;
+    align-self: center;
+ }
+
+ .card {
+  max-width: 100%;
+ }
+
+ input[type="email"],
+ input[type="password"],
+ input[type="text"],
+ input[text="file"],
+ input[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+ }
+
+ .refo a:link,
+			.ref a:visited,
+			.ref a:hover,
+			.ref a:active {
+				width: 120px;
+				height: 60px;
+				font-size: 12px;
+	}
+
+ .links a:link,
+			.links a:visited,
+			.links a:hover,
+			.links a:active {
+				width: 120px;
+				height: 60px;
+				font-size: 12px;
+
+}
+
+ .content {
+  flex-direction: column;
+ }
+
+ .dashhead {
+  margin-left: 0;
+  text-align: center;
+ }
+
+ .right-side {
+  width: 100%;
+  height: auto;
+  max-height: 300px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+ }
+
+.left-side,
+.perinfo {
+  padding: 5%;
+ } 
+
+ .chatbox {
+  width: 90%;
+  height: auto;
+ }
+
+ .chattxt {
+  width: 90%;
+ }
+
+ .chats {
+  width: 100%;
+ }
+
+ .chatbottom {
+  flex-direction: column;
+ }
+
+ .sidenav {
+  width: 100%;
+  height: auto;
+  position: relative;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+
+
+}
+
+.image-container {
+	display: flex; 
+    column-gap: 80px;	
+	margin-top: 40px;	
+}

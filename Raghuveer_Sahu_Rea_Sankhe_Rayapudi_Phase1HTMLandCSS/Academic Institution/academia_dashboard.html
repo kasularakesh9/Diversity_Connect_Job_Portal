@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="../Index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#">SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="../Services_URM_candidates.html">CANDIDATE</a>
+                    <a href="../Services_Academia.html">ACADEMIA</a>
+                    <a href="../Services_DEI.html">DEI</a>
+                    <a href="../Services_Recruiter.html">RECRUITER</a>
+                </div>
+            </li>
+            <li><a href="../AboutUs.html">ABOUT US</a></li>
+            <li><a href="../contact.html">CONTACT US</a></li>
+            <li><a href="../login.html">LOGOUT</a></li>
+        </ul>
+    </div>
+
+    <h1 class="dashhead">Academia Dashboard</h1>
+    <div class="content">
+
+        <div class="left-side">
+            <a href="Profile_Academia.html" class="dashbutton">Edit Profile</a>
+            <a href="Bookmarked_Candidates.html" class="dashbutton">Bookmarked Candidates </a>
+            <a href="view_urm_candidates.html" class="dashbutton">Search </a>
+            <h2>
+                <p>Personal Information</p>
+            </h2>
+            <div class="perinfo">
+                <label>Institution Name:</label>
+                <input type="text" value="UTA" readonly>
+                <label>Research focus area:</label>
+                <input type="text" value="Machine learning" readonly>
+                <label>Email:</label>
+                <input type="text" value="UTA@mavs.edu.in" readonly>
+                <label>Positions Offered:</label>
+                <input type="text" value="Faculty" readonly>
+            </div>
+            <br>
+            <div class="Facultysec">
+                <h2>Faculty</h2>
+                <a href="Add_faculty.html"> <button class="dashbutton">Add Faculty</button></a>
+            </div>
+            <table class="ftable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Class</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>San</td>
+                        <td>WDM</td>
+                        <td>CSE5335</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Ron</td>
+                        <td>DAMT</td>
+                        <td>CSE5353</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="right-side">
+            <a href="post_jobs.html"> <button class="dashbutton">Create New JobPosting</button></a>
+            <div class="joblist">
+                <div class="job-posting">
+                    <h3>Job Title 1</h3>
+                    <div class="noinfo">
+                        <label>No of candidates applied:</label>
+                        <input type="text" value="140" readonly>
+                    </div>
+                    <a href="Applicants_Academia.html"><button class="dashbutton">See all Applicants</button></a>
+                    <a href="Job_view.html"><button class="dashbutton">Details</button></a>
+                </div>
+                <div class="job-posting">
+                    <h3>Job Title 2</h3>
+                    <div class="noinfo">
+                        <label>No of candidates applied:</label>
+                        <input type="text" value="90" readonly>
+                    </div>
+                    <a href="Applicants_Academia.html"><button class="dashbutton">See all Applicants</button></a>
+                    <a href="Job_view.html"><button class="dashbutton">Details</button></a>
+                </div>
+                <div class="job-posting">
+                    <h3>Job Title 3</h3>
+                    <div class="noinfo">
+                        <label>No of candidates applied:</label>
+                        <input type="text" value="100" readonly>
+                    </div>
+                    <a href="Applicants_Academia.html"><button class="dashbutton">See all Applicants</button></a>
+                    <a href="Job_view.html"><button class="dashbutton">Details</button></a>
+                </div>
+                <div class="job-posting">
+                    <h3>Job Title 4</h3>
+                    <div class="noinfo">
+                        <label>No of candidates applied:</label>
+                        <input type="text" value="110" readonly>
+                    </div>
+                    <a href="Applicants_Academia.html"><button class="dashbutton">See all Applicants</button></a>
+                    <a href="Job_view.html"><button class="dashbutton">Details</button></a>
+                </div>
+                <div class="job-posting">
+                    <h3>Job Title 5</h3>
+                    <div class="noinfo">
+                        <label>No of candidates applied:</label>
+                        <input type="text" value="140" readonly>
+                    </div>
+                    <a href="Applicants_Academia.html"><button class="dashbutton">See all Applicants</button></a>
+                    <a href="Job_view.html"><button class="dashbutton">Details</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chatbutton">
+        <a href="Chat_Academia.html"><button>Chat</button></a>
+    </div>
+    <footer class="footdash">
+        <p>&copy; Group 9-CSE5335. ALL Rights Reserved. Diversity Connect</p>
+    </footer>
+</body>
+
+</html>
