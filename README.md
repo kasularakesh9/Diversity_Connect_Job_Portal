@@ -1,11 +1,8 @@
 
-# Diversity Connect- Job Portal for URM Candidates
+# 🔰Diversity Connect- Job Portal for URM Candidates
 The Underrepresented Minority Application is a web platform connecting URM candidates with Ph.D., postdoc, and faculty positions. Organizations can post jobs, and candidates must register to apply. It also includes a chat feature for direct communication between candidates and recruiters.
 
-
-
-
-## Run Locally
+## 🚀Run Locally
 
 In the project directory, you can run:
 
@@ -35,6 +32,33 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://create-react-app.dev/docs/deployment/) for more information.
+
+
+## 🧩UML Diagram
+**User Roles:**
+- Admin: A person with full access to the application.
+- URM Candidates: A person who want to apply for the jobs.
+- Academic Institution: A person who posts jobs for their  institution.
+- Recruiters: A person who posts jobs on behalf of their clients/agency.
+- DEI Officers: A person who posts jobs.
+
+
+![UML Diagram](https://github.com/SanmeshSankhe/Diversity_Connect_Job_Portal/blob/main/UML.png)
+
+
+## 🗃Database Schema
+
+![Schema](https://github.com/SanmeshSankhe/Diversity_Connect_Job_Portal/blob/main/Schema.png)
+
+
+## 〽️Tech Stack
+
+HTML, CSS, NodeJS, ReactJS, PHP, MySQL and Laravel
+
+
+## 📩Support
+
+For support, email sankhesanmesh@gmail.com
 
 
 
